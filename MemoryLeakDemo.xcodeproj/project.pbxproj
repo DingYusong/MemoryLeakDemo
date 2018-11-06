@@ -13,6 +13,13 @@
 		F7F4C760219141850024A7E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7F4C75F219141850024A7E4 /* Assets.xcassets */; };
 		F7F4C763219141850024A7E4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7F4C761219141850024A7E4 /* LaunchScreen.storyboard */; };
 		F7F4C766219141850024A7E4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F7F4C765219141850024A7E4 /* main.m */; };
+		F7F4C76E2191528D0024A7E4 /* DYSKVOViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7F4C76D2191528D0024A7E4 /* DYSKVOViewController.m */; };
+		F7F4C771219152A30024A7E4 /* DYSNSNotificationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7F4C770219152A30024A7E4 /* DYSNSNotificationViewController.m */; };
+		F7F4C774219152B60024A7E4 /* DYSDelegateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7F4C773219152B60024A7E4 /* DYSDelegateViewController.m */; };
+		F7F4C777219152C30024A7E4 /* DYSBlockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7F4C776219152C30024A7E4 /* DYSBlockViewController.m */; };
+		F7F4C77A219152E30024A7E4 /* DYSNSTimerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7F4C779219152E30024A7E4 /* DYSNSTimerViewController.m */; };
+		F7F4C77D219154F00024A7E4 /* DYSDog.m in Sources */ = {isa = PBXBuildFile; fileRef = F7F4C77C219154F00024A7E4 /* DYSDog.m */; };
+		F7F4C78121915A330024A7E4 /* DYSKVOSuperViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7F4C78021915A330024A7E4 /* DYSKVOSuperViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +33,20 @@
 		F7F4C762219141850024A7E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F7F4C764219141850024A7E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F7F4C765219141850024A7E4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F7F4C76C2191528D0024A7E4 /* DYSKVOViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DYSKVOViewController.h; sourceTree = "<group>"; };
+		F7F4C76D2191528D0024A7E4 /* DYSKVOViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DYSKVOViewController.m; sourceTree = "<group>"; };
+		F7F4C76F219152A30024A7E4 /* DYSNSNotificationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DYSNSNotificationViewController.h; sourceTree = "<group>"; };
+		F7F4C770219152A30024A7E4 /* DYSNSNotificationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DYSNSNotificationViewController.m; sourceTree = "<group>"; };
+		F7F4C772219152B60024A7E4 /* DYSDelegateViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DYSDelegateViewController.h; sourceTree = "<group>"; };
+		F7F4C773219152B60024A7E4 /* DYSDelegateViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DYSDelegateViewController.m; sourceTree = "<group>"; };
+		F7F4C775219152C30024A7E4 /* DYSBlockViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DYSBlockViewController.h; sourceTree = "<group>"; };
+		F7F4C776219152C30024A7E4 /* DYSBlockViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DYSBlockViewController.m; sourceTree = "<group>"; };
+		F7F4C778219152E30024A7E4 /* DYSNSTimerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DYSNSTimerViewController.h; sourceTree = "<group>"; };
+		F7F4C779219152E30024A7E4 /* DYSNSTimerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DYSNSTimerViewController.m; sourceTree = "<group>"; };
+		F7F4C77B219154F00024A7E4 /* DYSDog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DYSDog.h; sourceTree = "<group>"; };
+		F7F4C77C219154F00024A7E4 /* DYSDog.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DYSDog.m; sourceTree = "<group>"; };
+		F7F4C77F21915A330024A7E4 /* DYSKVOSuperViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DYSKVOSuperViewController.h; sourceTree = "<group>"; };
+		F7F4C78021915A330024A7E4 /* DYSKVOSuperViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DYSKVOSuperViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +83,15 @@
 				F7F4C757219141830024A7E4 /* AppDelegate.m */,
 				F7F4C759219141830024A7E4 /* ViewController.h */,
 				F7F4C75A219141830024A7E4 /* ViewController.m */,
+				F7F4C77E219156490024A7E4 /* KVO */,
+				F7F4C76F219152A30024A7E4 /* DYSNSNotificationViewController.h */,
+				F7F4C770219152A30024A7E4 /* DYSNSNotificationViewController.m */,
+				F7F4C772219152B60024A7E4 /* DYSDelegateViewController.h */,
+				F7F4C773219152B60024A7E4 /* DYSDelegateViewController.m */,
+				F7F4C775219152C30024A7E4 /* DYSBlockViewController.h */,
+				F7F4C776219152C30024A7E4 /* DYSBlockViewController.m */,
+				F7F4C778219152E30024A7E4 /* DYSNSTimerViewController.h */,
+				F7F4C779219152E30024A7E4 /* DYSNSTimerViewController.m */,
 				F7F4C75C219141830024A7E4 /* Main.storyboard */,
 				F7F4C75F219141850024A7E4 /* Assets.xcassets */,
 				F7F4C761219141850024A7E4 /* LaunchScreen.storyboard */,
@@ -69,6 +99,19 @@
 				F7F4C765219141850024A7E4 /* main.m */,
 			);
 			path = MemoryLeakDemo;
+			sourceTree = "<group>";
+		};
+		F7F4C77E219156490024A7E4 /* KVO */ = {
+			isa = PBXGroup;
+			children = (
+				F7F4C76C2191528D0024A7E4 /* DYSKVOViewController.h */,
+				F7F4C76D2191528D0024A7E4 /* DYSKVOViewController.m */,
+				F7F4C77F21915A330024A7E4 /* DYSKVOSuperViewController.h */,
+				F7F4C78021915A330024A7E4 /* DYSKVOSuperViewController.m */,
+				F7F4C77B219154F00024A7E4 /* DYSDog.h */,
+				F7F4C77C219154F00024A7E4 /* DYSDog.m */,
+			);
+			path = KVO;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -97,6 +140,7 @@
 		F7F4C74B219141830024A7E4 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = DYS;
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = "丁玉松";
 				TargetAttributes = {
@@ -141,8 +185,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F7F4C774219152B60024A7E4 /* DYSDelegateViewController.m in Sources */,
+				F7F4C76E2191528D0024A7E4 /* DYSKVOViewController.m in Sources */,
+				F7F4C78121915A330024A7E4 /* DYSKVOSuperViewController.m in Sources */,
 				F7F4C75B219141830024A7E4 /* ViewController.m in Sources */,
+				F7F4C771219152A30024A7E4 /* DYSNSNotificationViewController.m in Sources */,
+				F7F4C77D219154F00024A7E4 /* DYSDog.m in Sources */,
+				F7F4C777219152C30024A7E4 /* DYSBlockViewController.m in Sources */,
 				F7F4C766219141850024A7E4 /* main.m in Sources */,
+				F7F4C77A219152E30024A7E4 /* DYSNSTimerViewController.m in Sources */,
 				F7F4C758219141830024A7E4 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
