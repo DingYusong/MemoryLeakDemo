@@ -33,7 +33,7 @@ static void *DYSKVOViewControllerObserverContextName = &DYSKVOViewControllerObse
 //
 //    }
     
-    [self.dog removeObserver:self forKeyPath:NSStringFromSelector(@selector(fname)) context:DYSKVOViewControllerObserverContextName];
+    [self.dog removeObserver:self forKeyPath:NSStringFromSelector(@selector(name)) context:DYSKVOViewControllerObserverContextName];
 
     /**
      1. 已经remove过之后再次remove会导致程序crash。

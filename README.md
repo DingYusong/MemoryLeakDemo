@@ -2,13 +2,54 @@
 
 
 
+KVO的实现：
+
+当你观察一个对象（称该对象为「被观察对象」）时，一个新的类会动态被创建。这个类继承自「被观察对象」所对应类的，并重写该被观察属性的setter方法；针对setter方法的重写无非是在赋值语句前后加上相应的通知（或曰方法调用）；最后，把「被观察对象」的isa指针（isa指针告诉Runtime系统这个对象的类是什么）指向这个新创建的中间类，对象就神奇变成了新创建类的实例。
+
+
+
+```objective-c
+    DYSDog *dog = [DYSDog new];
+    dog.name = @"欢欢";
+    dog.age = 3;
+    self.dog = dog;
+    
+    [self.dog addObserver:self forKeyPath:NSStringFromSelector(@selector(name)) options:NSKeyValueObservingOptionNew|NSKeyValueObservingOptionOld context:DYSKVOSuperViewControllerObserverContextName];
+
+```
+
+在添加addObserver前后断点调试isa指针可以发现元类发生了变化。
+
+```
+(lldb) po self.dog->isa
+DYSDog
+
+(lldb) po self.dog->isa
+NSKVONotifying_DYSDog
+
+(lldb) 
+```
+
+生成了一个新类
+
+
+
+这个类是被观察类的子类
+
+```
+(lldb) po ([NSKVONotifying_DYSDog class]).superclass
+DYSDog
+```
 
 
 
 
 
 
-## `addObserver`和 `removeObserver`要成对出现
+
+## 使用指南
+
+### `addObserver`和 `removeObserver`要成对出现
 
 `addObserver`和 `removeObserver`要成对出现。一个监听如果`removeObserver`多于`addObserver`则会出现crash。这种情况，如果是在一个类里面写了两个 `removeObserver`,比较容易发现。例如：
 
@@ -52,7 +93,7 @@
 
 
 
-## 父子类添加了相同的observer,用context区分
+### 父子类添加了相同的observer,用context区分
 
 如果父子类添加了相同的observer，在父子类里面都进行`removeObserver`处理则会因为多次remove相同的observer导致crash。
 
@@ -119,7 +160,7 @@ static void *DYSKVOSuperViewControllerObserverContextName = &DYSKVOSuperViewCont
 
 
 
-## keyPath是NSString格式,直接写字符串容易出错，最好写成`NSStringFromSelector(SEL aSelector)`
+### keyPath是NSString格式,直接写字符串容易出错，最好写成`NSStringFromSelector(SEL aSelector)`
 
 
 
@@ -139,13 +180,13 @@ static void *DYSKVOSuperViewControllerObserverContextName = &DYSKVOSuperViewCont
 
 
 
-## 一般会在dealloc中进行removeObserver操作
+### 一般会在dealloc中进行removeObserver操作
 
 
 
 
 
-## 添加监听要在对象实例化之后
+### 添加监听要在对象实例化之后
 
 ```objective-c
     DYSDog *dog = [DYSDog new];
@@ -165,7 +206,7 @@ static void *DYSKVOSuperViewControllerObserverContextName = &DYSKVOSuperViewCont
 
 
 
-## 对象添加监听之后对象指针不能再改变
+### 对象添加监听之后对象指针不能再改变
 
 
 
@@ -190,9 +231,31 @@ static void *DYSKVOSuperViewControllerObserverContextName = &DYSKVOSuperViewCont
 
 
 
+### 直接修改成员变量不会触发KVO
+
+不会，KVO的本质是set方法，只有调用了set方法才会触发KVO。
+
+```objective-c
+_name = @"大黄"
+self.name = @"大黄";
+[self setName:@"大黄"];
+```
 
 
 
+### 手动触发KVO
+
+手动调用willChangeValueForKey和didChangeValueForKey方法。复写set方法后，如果要监听一般需要手动出发KVO。
+
+
+
+
+
+## 参考文档
+
+[国外大神研究](https://www.mikeash.com/pyblog/friday-qa-2009-01-23.html)
+
+https://objccn.io/issue-7-3/
 
 
 
