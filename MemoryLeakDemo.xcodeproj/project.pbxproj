@@ -20,6 +20,9 @@
 		F7F4C77A219152E30024A7E4 /* DYSNSTimerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7F4C779219152E30024A7E4 /* DYSNSTimerViewController.m */; };
 		F7F4C77D219154F00024A7E4 /* DYSDog.m in Sources */ = {isa = PBXBuildFile; fileRef = F7F4C77C219154F00024A7E4 /* DYSDog.m */; };
 		F7F4C78121915A330024A7E4 /* DYSKVOSuperViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7F4C78021915A330024A7E4 /* DYSKVOSuperViewController.m */; };
+		F7F4C7842192BF8B0024A7E4 /* DYSWeakTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = F7F4C7832192BF8B0024A7E4 /* DYSWeakTimer.m */; };
+		F7F4C7882192C4FE0024A7E4 /* DYSTimerProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = F7F4C7872192C4FE0024A7E4 /* DYSTimerProxy.m */; };
+		F7F4C78B2192DD120024A7E4 /* NSTimer+DYSWeakTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = F7F4C78A2192DD120024A7E4 /* NSTimer+DYSWeakTimer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +50,12 @@
 		F7F4C77C219154F00024A7E4 /* DYSDog.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DYSDog.m; sourceTree = "<group>"; };
 		F7F4C77F21915A330024A7E4 /* DYSKVOSuperViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DYSKVOSuperViewController.h; sourceTree = "<group>"; };
 		F7F4C78021915A330024A7E4 /* DYSKVOSuperViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DYSKVOSuperViewController.m; sourceTree = "<group>"; };
+		F7F4C7822192BF8B0024A7E4 /* DYSWeakTimer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DYSWeakTimer.h; sourceTree = "<group>"; };
+		F7F4C7832192BF8B0024A7E4 /* DYSWeakTimer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DYSWeakTimer.m; sourceTree = "<group>"; };
+		F7F4C7862192C4FE0024A7E4 /* DYSTimerProxy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DYSTimerProxy.h; sourceTree = "<group>"; };
+		F7F4C7872192C4FE0024A7E4 /* DYSTimerProxy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DYSTimerProxy.m; sourceTree = "<group>"; };
+		F7F4C7892192DD120024A7E4 /* NSTimer+DYSWeakTimer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSTimer+DYSWeakTimer.h"; sourceTree = "<group>"; };
+		F7F4C78A2192DD120024A7E4 /* NSTimer+DYSWeakTimer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+DYSWeakTimer.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,8 +99,7 @@
 				F7F4C773219152B60024A7E4 /* DYSDelegateViewController.m */,
 				F7F4C775219152C30024A7E4 /* DYSBlockViewController.h */,
 				F7F4C776219152C30024A7E4 /* DYSBlockViewController.m */,
-				F7F4C778219152E30024A7E4 /* DYSNSTimerViewController.h */,
-				F7F4C779219152E30024A7E4 /* DYSNSTimerViewController.m */,
+				F7F4C7852192C2F20024A7E4 /* Timer */,
 				F7F4C75C219141830024A7E4 /* Main.storyboard */,
 				F7F4C75F219141850024A7E4 /* Assets.xcassets */,
 				F7F4C761219141850024A7E4 /* LaunchScreen.storyboard */,
@@ -112,6 +120,21 @@
 				F7F4C77C219154F00024A7E4 /* DYSDog.m */,
 			);
 			path = KVO;
+			sourceTree = "<group>";
+		};
+		F7F4C7852192C2F20024A7E4 /* Timer */ = {
+			isa = PBXGroup;
+			children = (
+				F7F4C778219152E30024A7E4 /* DYSNSTimerViewController.h */,
+				F7F4C779219152E30024A7E4 /* DYSNSTimerViewController.m */,
+				F7F4C7822192BF8B0024A7E4 /* DYSWeakTimer.h */,
+				F7F4C7832192BF8B0024A7E4 /* DYSWeakTimer.m */,
+				F7F4C7862192C4FE0024A7E4 /* DYSTimerProxy.h */,
+				F7F4C7872192C4FE0024A7E4 /* DYSTimerProxy.m */,
+				F7F4C7892192DD120024A7E4 /* NSTimer+DYSWeakTimer.h */,
+				F7F4C78A2192DD120024A7E4 /* NSTimer+DYSWeakTimer.m */,
+			);
+			path = Timer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -186,6 +209,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F7F4C774219152B60024A7E4 /* DYSDelegateViewController.m in Sources */,
+				F7F4C7882192C4FE0024A7E4 /* DYSTimerProxy.m in Sources */,
 				F7F4C76E2191528D0024A7E4 /* DYSKVOViewController.m in Sources */,
 				F7F4C78121915A330024A7E4 /* DYSKVOSuperViewController.m in Sources */,
 				F7F4C75B219141830024A7E4 /* ViewController.m in Sources */,
@@ -193,6 +217,8 @@
 				F7F4C77D219154F00024A7E4 /* DYSDog.m in Sources */,
 				F7F4C777219152C30024A7E4 /* DYSBlockViewController.m in Sources */,
 				F7F4C766219141850024A7E4 /* main.m in Sources */,
+				F7F4C78B2192DD120024A7E4 /* NSTimer+DYSWeakTimer.m in Sources */,
+				F7F4C7842192BF8B0024A7E4 /* DYSWeakTimer.m in Sources */,
 				F7F4C77A219152E30024A7E4 /* DYSNSTimerViewController.m in Sources */,
 				F7F4C758219141830024A7E4 /* AppDelegate.m in Sources */,
 			);
