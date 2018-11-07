@@ -24,6 +24,7 @@
 		F7F4C7882192C4FE0024A7E4 /* DYSTimerProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = F7F4C7872192C4FE0024A7E4 /* DYSTimerProxy.m */; };
 		F7F4C78B2192DD120024A7E4 /* NSTimer+DYSWeakTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = F7F4C78A2192DD120024A7E4 /* NSTimer+DYSWeakTimer.m */; };
 		F7F4C78E2192E29C0024A7E4 /* DYSCat.m in Sources */ = {isa = PBXBuildFile; fileRef = F7F4C78D2192E29C0024A7E4 /* DYSCat.m */; };
+		F7F4C792219303740024A7E4 /* DYSBird.m in Sources */ = {isa = PBXBuildFile; fileRef = F7F4C791219303740024A7E4 /* DYSBird.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -59,6 +60,8 @@
 		F7F4C78A2192DD120024A7E4 /* NSTimer+DYSWeakTimer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+DYSWeakTimer.m"; sourceTree = "<group>"; };
 		F7F4C78C2192E29C0024A7E4 /* DYSCat.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DYSCat.h; sourceTree = "<group>"; };
 		F7F4C78D2192E29C0024A7E4 /* DYSCat.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DYSCat.m; sourceTree = "<group>"; };
+		F7F4C790219303740024A7E4 /* DYSBird.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DYSBird.h; sourceTree = "<group>"; };
+		F7F4C791219303740024A7E4 /* DYSBird.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DYSBird.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +101,8 @@
 				F7F4C77E219156490024A7E4 /* KVO */,
 				F7F4C76F219152A30024A7E4 /* DYSNSNotificationViewController.h */,
 				F7F4C770219152A30024A7E4 /* DYSNSNotificationViewController.m */,
+				F7F4C790219303740024A7E4 /* DYSBird.h */,
+				F7F4C791219303740024A7E4 /* DYSBird.m */,
 				F7F4C78F2192E5580024A7E4 /* Delegate */,
 				F7F4C775219152C30024A7E4 /* DYSBlockViewController.h */,
 				F7F4C776219152C30024A7E4 /* DYSBlockViewController.m */,
@@ -233,6 +238,7 @@
 				F7F4C78E2192E29C0024A7E4 /* DYSCat.m in Sources */,
 				F7F4C78B2192DD120024A7E4 /* NSTimer+DYSWeakTimer.m in Sources */,
 				F7F4C7842192BF8B0024A7E4 /* DYSWeakTimer.m in Sources */,
+				F7F4C792219303740024A7E4 /* DYSBird.m in Sources */,
 				F7F4C77A219152E30024A7E4 /* DYSNSTimerViewController.m in Sources */,
 				F7F4C758219141830024A7E4 /* AppDelegate.m in Sources */,
 			);
