@@ -108,6 +108,7 @@ void timerPollingImp(id self,SEL _cmd) {
 //    if (5 == count) {
 //        if (self.timer.isValid) {
 //            [self.timer invalidate];
+//            self.timer = nil;
 //        }
 //    }
 }
