@@ -9,7 +9,9 @@
 #import "ViewController.h"
 
 @interface ViewController ()<UITableViewDelegate, UITableViewDataSource>
+
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
+
 @property (nonatomic, copy) NSArray *dataSourceArray;
 
 @end
