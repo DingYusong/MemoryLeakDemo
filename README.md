@@ -251,6 +251,18 @@ self.name = @"大黄";
 
 
 
+
+
+## delegate
+
+1. 代理一般用weak来防止强引用循环。
+2. assign在delegate释放时候不会自动置为nil,易出野指针错误
+3. 在dealloc里面讲delegate置为nil是个好习惯，可以有效的防止野指针
+
+实现见demo。
+
+
+
 ## 参考文档
 
 [国外大神研究](https://www.mikeash.com/pyblog/friday-qa-2009-01-23.html)

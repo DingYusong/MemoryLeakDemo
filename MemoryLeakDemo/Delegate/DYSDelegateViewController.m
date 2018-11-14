@@ -19,6 +19,8 @@
 
 - (void)dealloc {
     NSLog(@"%@释放了",NSStringFromClass([self class]));
+    //在dealloc里面讲delegate置为nil是个好习惯，可以有效的防止野指针
+    self.cat.delegate = nil;
 }
 
 - (void)viewDidLoad {
